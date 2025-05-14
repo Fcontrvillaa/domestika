@@ -19,7 +19,18 @@ nombre_completo = nombre + " " + apellido
 
 print("Gracias por visitarnos ", nombre_completo)
 
+print("selecciona la opcion que deseas ")
+print("1: conocer cuantos animales tiene la tienda")
+print("2: comprar un animal")
 
-print("actualmente contamos con :")
-print("perros:", num_perros, "gatos:", num_gatos, "pajaros:", num_Pajaros)
-print("en total tenemos : ", sum_animales, "animales")
+respuesta = int(input())
+
+if respuesta == 1:
+    print("actualmente contamos con :")
+    print("perros:", num_perros, "gatos:", num_gatos, "pajaros:", num_Pajaros)
+    print("en total tenemos : ", sum_animales, "animales")
+
+elif respuesta == 2:
+    print("que animal deseas comprar ?")
+    animal = input()
+    print("Haz comprado un ", animal)
